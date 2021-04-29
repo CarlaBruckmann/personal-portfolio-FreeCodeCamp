@@ -1,3 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap");
+
+:root {
+  --background-menu: rgba(222, 210, 220, 0.57);
+  --background-home: linear-gradient(
+    180deg,
+    #c7afc9 0%,
+    #ded2dc 48.39%,
+    #ebc6ce 71.89%,
+    #df96b1 100%
+  );
+  --background-main: linear-gradient(180deg, #e8b0c1 0%, #c6acc7 100%);
+  --white: #ffffff;
+  --white-light: rgba(224, 224, 224, 0.24);
+  --white-light-font: rgba(255, 255, 255, 0.75);
+  --grey-light: #e5e5e5;
+  --grey-medium: #767676;
+  --grey-bold: #5e5e5e;
+  --button-color: #ebc7cf;
+  --border: solid 2px var(--white);
+  --transition: 0.4s ease all;
+  --font-family-title: "Arima Madurai";
+  --font-family-text: "Poppins";
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -5,55 +31,64 @@
   text-decoration: none;
 }
 
+header {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  z-index: 2;
+  background: var(--background-menu);
+}
+
+.wrapper-header {
+  justify-content: space-around;
+  align-items: center;
+}
+
 .d-flex-row {
   display: flex;
   flex-direction: row;
 }
 
-header {
-  width: 100%;;
-  position: fixed;
-  z-index: 2;
-}
-
-.wrapper-header{
-  justify-content: space-around;
-  align-items: center;
-}
-
-
 /*menu*/
+.logo {
+  z-index: 9999;
+  font-family: var(--font-family-title);
+  font-size: 20px;
+  color: var(--white);
+}
 .icon {
   cursor: pointer;
   z-index: 9999;
-  border-color: #fff;
+  border-color: var(--white);
   border-radius: 5px;
-  background-color: black;
+  font-family: var(--font-family-text);
+  font-size: 20px;
+  color: var(--white);
 }
 .icon-menu {
   padding: 15px 5px 15px 15px;
 }
 
 .icon-p {
-  padding: 15px 15px 15px 5px;
+  padding: 22px 15px 15px 5px;
 }
 .p-1 {
   width: 30px;
   height: 2px;
-  background-color: white;
+  background-color: var(--white);
   transition: 0.3s;
 }
 .p-2 {
   width: 30px;
   height: 2px;
-  background-color: white;
+  background-color: var(--white);
   margin: 5px 0;
   transition: 0.3s;
 }
 .p-3 {
   width: 30px;
   height: 2px;
-  background-color: white;
+  background-color: var(--white);
   transition: 0.3s;
 }
 /* Icone hamburguer vira X */
@@ -71,8 +106,9 @@ header {
   left: -100rem;
   top: 0;
 
-  background: var(--black-medium);
-  width: 50vh;
+  background: url(../img/Vector-menu.svg) no-repeat;
+  background-color: var(--background-menu);
+  width: 47vh;
   height: 100vh;
 
   display: flex;
@@ -94,10 +130,9 @@ header {
   list-style-type: none;
 }
 .menu a {
-  color: var(--orange);
-  font-family: var(--font-family);
+  color: var(--white);
+  font-family: var(--font-family-title);
   text-transform: uppercase;
-  font-weight: 300;
   font-size: 20px;
   line-height: 29px;
   padding: 25px;
