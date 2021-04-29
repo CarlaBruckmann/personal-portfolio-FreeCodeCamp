@@ -5,14 +5,22 @@
   text-decoration: none;
 }
 
-.header-flex {
-  z-index: 2;
+.d-flex-row {
   display: flex;
   flex-direction: row;
 }
-.wrapper-header {
+
+header {
+  width: 100%;;
   position: fixed;
+  z-index: 2;
 }
+
+.wrapper-header{
+  justify-content: space-around;
+  align-items: center;
+}
+
 
 /*menu*/
 .icon {
