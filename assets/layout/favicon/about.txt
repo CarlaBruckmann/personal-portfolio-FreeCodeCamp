@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Arima Madurai
+- Font Author: Copyright 2015 The Arima Project Authors (info@ndiscovered.com)
+- Font Source: http://fonts.gstatic.com/s/arimamadurai/v7/t5tmIRoeKYORG0WNMgnC3seB7TnFrpOHYh4.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL)
