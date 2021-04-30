@@ -32,8 +32,8 @@
       <section class="wrapper-header d-flex-row">
         <section class="logo d-flex-row">
           <div class="wrapper-lines-logo">
-            <hr class="custom-line-1"/>
-            <hr class="custom-line-2"/>
+            <hr class="custom-line-1" />
+            <hr class="custom-line-2" />
           </div>
           <span>Carla Bruckmann</span>
         </section>
@@ -50,12 +50,12 @@
             </div>
           </nav>
 
-          <nav id="nav-bar" class="menu">
+          <nav id="navbar" class="menu">
             <ul>
               <li><a class="nav-link" href="#welcome-section">Home</a></li>
               <hr class="custom-line-3" />
               <li>
-                <a class="nav-link" href="#">Who Am I?</a>
+                <a class="nav-link" href="about">Who Am I?</a>
               </li>
               <hr class="custom-line-3" />
               <li>
@@ -67,7 +67,46 @@
           </nav>
         </section>
       </section>
+
       <section id="welcome-section"></section>
+      <section id="waves">
+        <svg
+          class="waves"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28"
+          preserveAspectRatio="none"
+          shape-rendering="auto"
+        >
+          <defs>
+            <path
+              id="gentle-wave"
+              d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+            />
+          </defs>
+          <g class="parallax">
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="0"
+              fill="rgba(255,255,255,0.7)"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="3"
+              fill="rgba(255,255,255,0.5)"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="5"
+              fill="rgba(255,255,255,0.3)"
+            />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+          </g>
+        </svg>
+      </section>
     </header>
 
     <script

@@ -1,5 +1,5 @@
 
-// menu
+// menu //
 function initMenu(){
     let icon = document.querySelector('.icon');
     let menu = document.querySelector('.menu');
@@ -19,7 +19,7 @@ function initMenu(){
 initMenu();
 
 
-// houdini
+// houdini // 
 (async function() {
     // Polyfill for older browsers//
 if (CSS["paintWorklet"] === undefined)
