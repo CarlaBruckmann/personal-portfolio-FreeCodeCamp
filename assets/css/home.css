@@ -33,6 +33,16 @@
   text-decoration: none;
 }
 
+.d-flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.d-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
 header {
   width: 100%;
   height: auto;
@@ -41,10 +51,6 @@ header {
   background: var(--background-header);
 }
 
-.d-flex-row {
-  display: flex;
-  flex-direction: row;
-}
 
 .wrapper-header {
   justify-content: space-around;
@@ -52,17 +58,17 @@ header {
   z-index: 9999;
 }
 
-.wrapper-lines-logo {
+.wrapper-header .logo .wrapper-lines-logo {
   width: 60px;
   height: 30px;
 }
 
-hr {
+.wrapper-header hr {
   border: 0;
   background: paint(curved-line);
 }
 /*houdini*/
-.custom-line-1 {
+.wrapper-header .logo .wrapper-lines-logo .custom-line-1 {
   --curved-lineHeight: 10;
   --curved-lineWidth: 1; /* default: 3 */
   --curved-lineColor: var(--white); /*default: 'black' */
@@ -71,7 +77,7 @@ hr {
   height: 10px;
 }
 
-.custom-line-2 {
+.wrapper-header .logo .wrapper-lines-logo .custom-line-2 {
   --curved-lineHeight: 14;
   --curved-lineWidth: 1; /* default: 3 */
   --curved-lineColor: var(--white); /*default: 'black' */
@@ -80,7 +86,7 @@ hr {
   height: 15px;
   margin-left: 10px;
 }
-.custom-line-3 {
+.wrapper-header #navbar .custom-line-3 {
   --curved-lineHeight: 20;
   --curved-lineWidth: 1; /* default: 3 */
   --curved-lineColor: var(--white-light-font); /*default: 'black' */
@@ -90,7 +96,7 @@ hr {
 }
 /**/
 
-.logo {
+.wrapper-header .logo {
   z-index: 9999;
   font-family: var(--font-family-title);
   font-weight: 500;
@@ -98,7 +104,7 @@ hr {
   color: var(--white);
 }
 /*menu*/
-.icon {
+.wrapper-header .icon {
   z-index: 9999;
   cursor: pointer;
   border-color: var(--white);
@@ -108,27 +114,27 @@ hr {
   font-size: 20px;
   color: var(--white);
 }
-.icon-menu {
+.wrapper-header .icon .icon-menu {
   padding: 15px 5px 15px 15px;
 }
 
-.icon-p {
+.wrapper-header .icon .icon-p {
   padding: 22px 15px 15px 5px;
 }
-.p-1 {
+.wrapper-header .icon .icon-p .p-1 {
   width: 30px;
   height: 2px;
   background-color: var(--white);
   transition: 0.3s;
 }
-.p-2 {
+.wrapper-header .icon .icon-p .p-2 {
   width: 30px;
   height: 2px;
   background-color: var(--white);
   margin: 5px 0;
   transition: 0.3s;
 }
-.p-3 {
+.wrapper-header .icon .icon-p .p-3 {
   width: 30px;
   height: 2px;
   background-color: var(--white);
@@ -144,7 +150,7 @@ hr {
 .icon-x .p-3 {
   transform: rotate(-45deg) translate(2px, -6px);
 }
-.menu {
+.wrapper-header  .menu {
   position: absolute;
   left: -100rem;
   top: 0;
@@ -163,16 +169,16 @@ hr {
   visibility: hidden;
   opacity: 0;
 }
-.menu li + li {
+.wrapper-header  .menu li + li {
   margin-top: 30px;
 }
-.menu li {
+.wrapper-header  .menu li {
   padding: 30px;
 }
-.menu ul li {
+.wrapper-header  .menu ul li {
   list-style-type: none;
 }
-.menu a {
+.wrapper-header  .menu a {
   color: var(--white);
   font-family: var(--font-family-title);
   text-transform: uppercase;
@@ -196,8 +202,45 @@ hr {
   background: var(--background-home);
 }
 
+#welcome-section #title-welcome-section{
+position: absolute;
+width: 100%;
+top: 28%;
+justify-content: center;
+}
+
+#welcome-section #title-welcome-section .wrapper-title-welcome-section{
+  align-items: center;
+}
+
+#welcome-section #title-welcome-section .wrapper-title-welcome-section h1{
+  font-family: var(--font-family-title);
+  font-weight: 700;
+  font-size: 72px;
+  color: var(--white-light-font);
+}
+#welcome-section #title-welcome-section .wrapper-title-welcome-section p{
+  font-family: var(--font-family-title);
+  font-weight: 200;
+  font-size: 48px;
+  color: var(--white-light-font);
+}
+#welcome-section #title-welcome-section .wrapper-title-welcome-section h2{
+  font-family: var(--font-family-title);
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--white);
+  padding: 0 0 20px 10px;
+}
+#welcome-section #title-welcome-section .wrapper-title-welcome-section h3{
+  font-family: var(--font-family-title);
+  font-weight: 400;
+  font-size: 36px;
+  color: var(--white);
+}
+
 /*waves*/
-.waves {
+#welcome-section .waves {
   position: relative;
   width: 100%;
   height: 15vh;
@@ -235,4 +278,3 @@ hr {
     transform: translate3d(85px, 0, 0);
   }
 }
-
