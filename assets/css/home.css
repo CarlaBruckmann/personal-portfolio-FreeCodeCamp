@@ -4,7 +4,7 @@
 :root {
   --background-header: #c9b3cbfd;
   --background-menu: #c9b3cb;
-  --background-waves: #df96b1;
+  --background-waves: linear-gradient(180deg, #E9C8D1 0%, #E4A8BC 100%);
   --background-home: linear-gradient(
     180deg,
     #c7afc9 0%,
@@ -189,13 +189,19 @@ hr {
 }
 /**/
 
+#welcome-section {
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  background: var(--background-home);
+}
 
 /*waves*/
 .waves {
-  z-index: -1;
   position: relative;
   width: 100%;
   height: 15vh;
+  margin-top: 85vh;
   background-color: var(--background-waves);
   margin-bottom: -7px;
   min-height: 100px;
@@ -230,8 +236,3 @@ hr {
   }
 }
 
-#welcome-section {
-  width: 100%;
-  height: 100vh;
-  background: var(--background-home);
-}
