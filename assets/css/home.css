@@ -189,11 +189,7 @@ hr {
 }
 /**/
 
-#welcome-section {
-  width: 100vw;
-  height: 700px;
-  background: var(--background-home);
-}
+
 /*waves*/
 .waves {
   z-index: -1;
@@ -232,4 +228,10 @@ hr {
   100% {
     transform: translate3d(85px, 0, 0);
   }
+}
+
+#welcome-section {
+  width: 100%;
+  height: 100vh;
+  background: var(--background-home);
 }
