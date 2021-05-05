@@ -43,6 +43,13 @@
   flex-direction: column;
 }
 
+h2 {
+  font-family: var(--font-family-title);
+  font-weight: 700;
+  font-size: 48px;
+  padding: 0 0 20px 10px;
+}
+
 header {
   width: 100%;
   height: auto;
@@ -60,7 +67,6 @@ header {
 .wrapper-header .logo .wrapper-lines-logo {
   width: 60px;
   height: 30px;
-
 }
 
 .wrapper-header hr {
@@ -209,6 +215,7 @@ header {
   width: 100%;
   top: 28%;
   justify-content: center;
+  color: var(--white);
 }
 
 #welcome-section #title-welcome-section .wrapper-title-welcome-section {
@@ -219,8 +226,7 @@ header {
   font-family: var(--font-family-title);
   font-weight: 700;
   font-size: 72px;
-  color: var(--white-light-font);
-  animation: opacity1 3s;
+  animation: opacity1 4s;
 }
 @keyframes opacity1 {
   0% {
@@ -237,7 +243,6 @@ header {
   font-family: var(--font-family-title);
   font-weight: 200;
   font-size: 48px;
-  color: var(--white-light-font);
   animation: opacity2 4s;
 }
 
@@ -256,18 +261,12 @@ header {
   }
 }
 #welcome-section #title-welcome-section .wrapper-title-welcome-section h2 {
-  font-family: var(--font-family-title);
-  font-weight: 700;
-  font-size: 48px;
-  color: var(--white);
-  padding: 0 0 20px 10px;
   animation: opacity2 4s;
 }
 #welcome-section #title-welcome-section .wrapper-title-welcome-section h3 {
   font-family: var(--font-family-title);
   font-weight: 400;
   font-size: 36px;
-  color: var(--white);
   animation: opacity3 4s;
 }
 @keyframes opacity3 {
@@ -323,4 +322,24 @@ header {
   100% {
     transform: translate3d(85px, 0, 0);
   }
+}
+
+#about-section {
+  width: 100%;
+  height: auto;
+  margin: 90px 0;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  color: var(--grey-medium);
+}
+#about-section #text-about-section {
+  margin: 50px 8%;
+}
+
+#about-section #text-about-section p {
+  font-family: var(--font-family-text);
+  font-weight: 200;
+  font-size: 30px;
+  line-height: 45px;
 }
