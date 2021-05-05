@@ -27,9 +27,9 @@
     transition: var(--transition);
   }
   #welcome-section .waves {
-    height: 40px;
-    min-height: 40px;
-    margin-top: 95.5vh;
+    height: 70px;
+    min-height: 70px;
+    margin-top: 92.2vh;
     transition: var(--transition);
   }
 }
@@ -70,6 +70,11 @@
   }
   .wrapper-header .logo{
     margin: 0 0 15px 15px;
+    transition: var(--transition);
   }
+  #welcome-section #title-welcome-section{
+    top: 40%;
+    transition: var(--transition);
+    }
 
 }
