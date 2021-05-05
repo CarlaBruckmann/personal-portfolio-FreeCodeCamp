@@ -60,6 +60,7 @@ header {
 .wrapper-header .logo .wrapper-lines-logo {
   width: 60px;
   height: 30px;
+
 }
 
 .wrapper-header hr {
@@ -97,6 +98,7 @@ header {
 
 .wrapper-header .logo {
   z-index: 9999;
+  padding-top: 5px;
   font-family: var(--font-family-title);
   font-weight: 500;
   font-size: 20px;

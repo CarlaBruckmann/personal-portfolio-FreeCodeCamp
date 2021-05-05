@@ -68,4 +68,8 @@
     margin: 20px 10px 0 20px;
     transition: var(--transition);
   }
+  .wrapper-header .logo{
+    margin: 0 0 15px 15px;
+  }
+
 }
