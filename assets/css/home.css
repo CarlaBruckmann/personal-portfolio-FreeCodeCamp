@@ -4,7 +4,7 @@
 :root {
   --background-header: #c9b3cbfd;
   --background-menu: #c9b3cb;
-  --background-waves: linear-gradient(180deg, #E9C8D1 0%, #E4A8BC 100%);
+  --background-waves: linear-gradient(180deg, #e9c8d1 0%, #e4a8bc 100%);
   --background-home: linear-gradient(
     180deg,
     #c7afc9 0%,
@@ -50,7 +50,6 @@ header {
   z-index: 2;
   background: var(--background-header);
 }
-
 
 .wrapper-header {
   justify-content: space-around;
@@ -103,6 +102,7 @@ header {
   font-size: 20px;
   color: var(--white);
 }
+
 /*menu*/
 .wrapper-header .icon {
   z-index: 9999;
@@ -150,7 +150,7 @@ header {
 .icon-x .p-3 {
   transform: rotate(-45deg) translate(2px, -6px);
 }
-.wrapper-header  .menu {
+.wrapper-header .menu {
   position: absolute;
   left: -100rem;
   top: 0;
@@ -169,16 +169,16 @@ header {
   visibility: hidden;
   opacity: 0;
 }
-.wrapper-header  .menu li + li {
+.wrapper-header .menu li + li {
   margin-top: 30px;
 }
-.wrapper-header  .menu li {
+.wrapper-header .menu li {
   padding: 30px;
 }
-.wrapper-header  .menu ul li {
+.wrapper-header .menu ul li {
   list-style-type: none;
 }
-.wrapper-header  .menu a {
+.wrapper-header .menu a {
   color: var(--white);
   font-family: var(--font-family-title);
   text-transform: uppercase;
@@ -202,41 +202,85 @@ header {
   background: var(--background-home);
 }
 
-#welcome-section #title-welcome-section{
-position: absolute;
-width: 100%;
-top: 28%;
-justify-content: center;
+#welcome-section #title-welcome-section {
+  position: absolute;
+  width: 100%;
+  top: 28%;
+  justify-content: center;
 }
 
-#welcome-section #title-welcome-section .wrapper-title-welcome-section{
+#welcome-section #title-welcome-section .wrapper-title-welcome-section {
   align-items: center;
 }
 
-#welcome-section #title-welcome-section .wrapper-title-welcome-section h1{
+#welcome-section #title-welcome-section .wrapper-title-welcome-section h1 {
   font-family: var(--font-family-title);
   font-weight: 700;
   font-size: 72px;
   color: var(--white-light-font);
+  animation: opacity1 3s;
 }
-#welcome-section #title-welcome-section .wrapper-title-welcome-section p{
+@keyframes opacity1 {
+  0% {
+    opacity: 0.1;
+  }
+  30% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#welcome-section #title-welcome-section .wrapper-title-welcome-section p {
   font-family: var(--font-family-title);
   font-weight: 200;
   font-size: 48px;
   color: var(--white-light-font);
+  animation: opacity2 4s;
 }
-#welcome-section #title-welcome-section .wrapper-title-welcome-section h2{
+
+@keyframes opacity2 {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#welcome-section #title-welcome-section .wrapper-title-welcome-section h2 {
   font-family: var(--font-family-title);
   font-weight: 700;
   font-size: 48px;
   color: var(--white);
   padding: 0 0 20px 10px;
+  animation: opacity2 4s;
 }
-#welcome-section #title-welcome-section .wrapper-title-welcome-section h3{
+#welcome-section #title-welcome-section .wrapper-title-welcome-section h3 {
   font-family: var(--font-family-title);
   font-weight: 400;
   font-size: 36px;
   color: var(--white);
+  animation: opacity3 4s;
+}
+@keyframes opacity3 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.1;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*waves*/
