@@ -357,7 +357,7 @@ header {
   z-index: 1;
   bottom: -25em;
   height: 312px;
-  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1920 312" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(255, 255, 255, 1)" d="M 0 99 C 455 99 455 296 910 296 L 910 296 L 910 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 909 296 C 1414.5 296 1414.5 99 1920 99 L 1920 99 L 1920 0 L 909 0 Z" stroke-width="0"></path> </svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1920 312" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(255, 255, 255, 1)" d="M 0 99 C 454 99 454 249 908 249 L 908 249 L 908 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 907 249 C 1413.5 249 1413.5 99 1920 99 L 1920 99 L 1920 0 L 907 0 Z" stroke-width="0"></path> </svg>');
 }
 
 #projects {
