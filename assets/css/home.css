@@ -12,7 +12,7 @@
     #ebc6ce 71.89%,
     #df96b1 100%
   );
-  --background-main: linear-gradient(180deg, #e8b0c1 0%, #c6acc7 100%);
+  --background-project-section: linear-gradient(180deg, #e8b0c1 0%, #c6acc7 100%);
   --white: #ffffff;
   --white-light: rgba(224, 224, 224, 0.24);
   --white-light-font: rgba(255, 255, 255, 0.75);
@@ -42,14 +42,23 @@
   display: flex;
   flex-direction: column;
 }
-
-h2 {
+h1{
   font-family: var(--font-family-title);
   font-weight: 700;
-  font-size: 48px;
-  padding: 0 0 20px 10px;
 }
+h2 , h4{
+  font-family: var(--font-family-title);
+  font-weight: 700;
+}
+ h3 {
+  font-family: var(--font-family-title);
+  font-weight: 400;
+ }
 
+p {
+    font-family: var(--font-family-text);
+    font-weight: 200;
+}
 header {
   width: 100%;
   height: auto;
@@ -223,8 +232,6 @@ header {
 }
 
 #welcome-section #title-welcome-section .wrapper-title-welcome-section h1 {
-  font-family: var(--font-family-title);
-  font-weight: 700;
   font-size: 72px;
   animation: opacity1 4s;
 }
@@ -261,11 +268,11 @@ header {
   }
 }
 #welcome-section #title-welcome-section .wrapper-title-welcome-section h2 {
+  font-size: 48px;
+  padding: 0 0 20px 10px;
   animation: opacity2 4s;
 }
 #welcome-section #title-welcome-section .wrapper-title-welcome-section h3 {
-  font-family: var(--font-family-title);
-  font-weight: 400;
   font-size: 36px;
   animation: opacity3 4s;
 }
@@ -323,7 +330,9 @@ header {
     transform: translate3d(85px, 0, 0);
   }
 }
-
+.title-section h2{
+  font-size: 48px;;
+}
 #about-section {
   width: 100%;
   height: auto;
@@ -340,11 +349,10 @@ header {
   margin: 50px 8% 0 8%;
 }
 
-#about-section #text-about-section p {
-  font-family: var(--font-family-text);
-  font-weight: 200;
-  font-size: 30px;
+#about-section #text-about-section p,
+#projects #title-projects-section p {
   line-height: 45px;
+  font-size: 30px;
 }
 
 #about-section:after {
@@ -362,10 +370,82 @@ header {
 
 #projects {
   width: 100%;
-  height: 800px;
-  background: var(--background-main);
+  height: 1500px;
+  background: var(--background-project-section);
+  color: var(--white);
 }
 
+#projects #title-projects-section{
+  justify-content: center;
+  align-items: center;
+  padding-top: 25%;
+}
+.d-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  margin: 500px 15px 0 15px;
+}
+.d-grid .item{
+  border: var(--border);
+}
+.d-grid .item1{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  width: 100%;
+  height: 100%;
+}
+.d-grid .item2{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  width: 100%;
+  height: 100%;
+}
+.d-grid .item3{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  width: 100%;
+  height: 100px;
+}
+
+.d-grid .item4{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 6;
+  width: 100%;
+  height: 100%;
+}
+#projects .project-title {
+  align-items: center;
+}
+#projects .project-title h4{
+  font-size: 48px;
+}
+#projects .project-title p{
+  margin: 5px 0 0 10px;
+  font-size: 30px;
+}
+
+ /* #projects:after {
+  background-repeat: no-repeat;
+  background-size: cover center;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  bottom: -115em;
+  height: 312px;
+background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1920 312" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(201, 179, 203, 1)" d="M 0 99 C 336 99 336 268 672 268 L 672 268 L 672 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(201, 179, 203, 1)" d="M 671 268 C 974 268 974 130 1277 130 L 1277 130 L 1277 0 L 671 0 Z" stroke-width="0"></path> <path fill="rgba(201, 179, 203, 1)" d="M 1276 130 C 1442 130 1442 153 1608 153 L 1608 153 L 1608 0 L 1276 0 Z" stroke-width="0"></path><path fill="rgba(201, 179, 203, 1)" d="M 1607 153 C 1763.5 153 1763.5 99 1920 99 L 1920 99 L 1920 0 L 1607 0 Z" stroke-width="0"></path></svg>');
+}  */
 
 footer {
   width: 100%;

@@ -16,7 +16,9 @@
     font-size: 42px;
     transition: var(--transition);
   }
-  h2 {
+  .title-section h2,
+  #welcome-section #title-welcome-section .wrapper-title-welcome-section h2,
+  #projects .project-title h4  {
     font-size: 42px;
     transition: var(--transition);
   }
@@ -30,12 +32,35 @@
     margin-top: 95vh;
     transition: var(--transition);
   }
-  #about-section #text-about-section p {
+  #about-section #text-about-section p,
+  #projects #title-projects-section p {
     font-size: 24px;
     transition: var(--transition);
   }
-}
+  .d-grid{
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
 
+
+.d-grid .item1{
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.d-grid .item2{
+  grid-column-start: 1;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+.d-grid .item3{
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+.d-grid .item4{
+  grid-row-start: 6;
+  grid-row-end: 8;
+}
+}
 @media screen and (max-width: 500px) {
   .wrapper-header .menu {
     width: 37vh;
@@ -49,7 +74,9 @@
     font-size: 38px;
     transition: var(--transition);
   }
-  h2 {
+  .title-section h2,
+  #welcome-section #title-welcome-section .wrapper-title-welcome-section h2,
+  #projects .project-title h4 {
     font-size: 38px;
     transition: var(--transition);
   }
@@ -59,7 +86,8 @@
     padding: 0 15px 0 15px;
     transition: var(--transition);
   }
-  #about-section #text-about-section p {
+  #about-section #text-about-section p,
+  #projects #title-projects-section p {
     font-size: 20px;
     transition: var(--transition);
   }
