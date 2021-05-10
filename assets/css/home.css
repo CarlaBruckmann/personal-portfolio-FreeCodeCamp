@@ -332,9 +332,12 @@ header {
   align-items: center;
   background-color: var(--white);
   color: var(--grey-medium);
+  position: relative;
+  z-index: 1;
 }
+
 #about-section #text-about-section {
-  margin: 50px 8%;
+  margin: 50px 8% 0 8%;
 }
 
 #about-section #text-about-section p {
@@ -342,4 +345,30 @@ header {
   font-weight: 200;
   font-size: 30px;
   line-height: 45px;
+}
+
+#about-section:after {
+  background-repeat: no-repeat;
+  background-size: cover center;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  bottom: -25em;
+  height: 312px;
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1920 312" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(255, 255, 255, 1)" d="M 0 99 C 455 99 455 296 910 296 L 910 296 L 910 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 909 296 C 1414.5 296 1414.5 99 1920 99 L 1920 99 L 1920 0 L 909 0 Z" stroke-width="0"></path> </svg>');
+}
+
+#projects {
+  width: 100%;
+  height: 800px;
+  background: var(--background-main);
+}
+
+
+footer {
+  width: 100%;
+  height: 800px;
+  background: var(--background-menu);
 }
