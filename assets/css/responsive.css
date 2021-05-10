@@ -25,9 +25,9 @@
     transition: var(--transition);
   }
   #welcome-section .waves {
-    height: 40px;
-    min-height: 40px;
-    margin-top: 95.6vh;
+    height: 50px;
+    min-height: 50px;
+    margin-top: 95vh;
     transition: var(--transition);
   }
   #about-section #text-about-section p {
@@ -82,4 +82,5 @@
     top: 40%;
     transition: var(--transition);
   }
+ 
 }
