@@ -18,7 +18,7 @@
   }
   .title-section h2,
   #welcome-section #title-welcome-section .wrapper-title-welcome-section h2,
-  #projects .project-title h4 {
+  #projects #cards .project-title h4 {
     font-size: 42px;
     transition: var(--transition);
   }
@@ -76,7 +76,7 @@
   }
   .title-section h2,
   #welcome-section #title-welcome-section .wrapper-title-welcome-section h2,
-  #projects .project-title h4 {
+  #projects #cards .project-title h4 {
     font-size: 38px;
     transition: var(--transition);
   }
@@ -88,6 +88,7 @@
   }
   #about-section #text-about-section p,
   #projects #title-projects-section p {
+    line-height: 30px;
     font-size: 20px;
     transition: var(--transition);
   }

@@ -24,7 +24,7 @@
   --grey-medium: #767676;
   --grey-bold: #5e5e5e;
   --button-color: #ebc7cf;
-  --border: solid 2px var(--white);
+  --border: solid 2px var(--white-light-font);
   --transition: 0.4s ease all;
   --font-family-title: "Arima Madurai";
   --font-family-text: "Poppins";
@@ -60,7 +60,8 @@ h3 {
   font-weight: 400;
 }
 
-p {
+p,
+a {
   font-family: var(--font-family-text);
   font-weight: 200;
 }
@@ -351,7 +352,7 @@ header {
 }
 
 #about-section #text-about-section {
-  margin: 50px 8% 0 8%;
+  margin: 50px 15% 0 15%;
 }
 
 #about-section #text-about-section p,
@@ -390,11 +391,9 @@ header {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
-  margin: 500px 15px 0 15px;
+  margin: 500px 15% 0 15%;
 }
-.d-grid .item {
-  border: var(--border);
-}
+
 .d-grid .item1 {
   grid-column-start: 1;
   grid-column-end: 2;
@@ -410,6 +409,7 @@ header {
   grid-row-end: 4;
   width: 100%;
   height: 100%;
+  border: var(--border);
 }
 .d-grid .item3 {
   grid-column-start: 1;
@@ -418,6 +418,7 @@ header {
   grid-row-end: 4;
   width: 100%;
   height: 100px;
+  border: var(--border);
 }
 
 .d-grid .item4 {
@@ -427,18 +428,57 @@ header {
   grid-row-end: 6;
   width: 100%;
   height: 100%;
+  border: var(--border);
 }
-#projects .project-title {
+#projects #cards .project-title {
   align-items: center;
 }
-#projects .project-title h4 {
+#projects #cards .project-title h4 {
   font-size: 48px;
 }
-#projects .project-title p {
+#projects #cards .project-title p {
   margin: 5px 0 0 10px;
   font-size: 30px;
 }
+#projects #cards .wrapper-card {
+  width: 100%;
+  height: 800px;
+  border-radius: 50px;
+  background-color: var(--white-light);
+  align-items: center;
+}
+#projects #cards .wrapper-card .buttons-card {
+  justify-content: space-around;
+}
+#projects #cards .wrapper-card .buttons-card .btn {
+  width: 250px;
+  height: 55px;
+  border: var(--border);
+  border-radius: 30px;
+  background-color: var(--button-color);
+  
+}
+#projects #cards .wrapper-card .buttons-card .btn a {
+  font-size: 25px;
+  color: var(--white);
 
+}
+#projects #cards .wrapper-card .buttons-card .btn:hover {
+  background-color: var(--white);
+  transition: var(--transition);
+}
+#projects #cards .wrapper-card .buttons-card .btn:hover a {
+  color: var(--button-color);
+  transition: var(--transition);
+
+}
+#projects #cards .info-card {
+  border: var(--border);
+  border-radius: 45px;
+  width: 90%;
+  height: 80%;
+  padding: 30px;
+}
 /* #projects:after {
   background-repeat: no-repeat;
   background-size: cover center;
