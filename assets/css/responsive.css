@@ -18,7 +18,7 @@
   }
   .title-section h2,
   #welcome-section #title-welcome-section .wrapper-title-welcome-section h2,
-  #projects .project-title h4  {
+  #projects .project-title h4 {
     font-size: 42px;
     transition: var(--transition);
   }
@@ -37,29 +37,29 @@
     font-size: 24px;
     transition: var(--transition);
   }
-  .d-grid{
-    grid-template-columns: 1fr ;
+  .d-grid {
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px 0;
   }
 
-
-.d-grid .item1{
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
-.d-grid .item2{
-  grid-column-start: 1;
-  grid-row-start: 3;
-  grid-row-end: 5;
-}
-.d-grid .item3{
-  grid-row-start: 5;
-  grid-row-end: 6;
-}
-.d-grid .item4{
-  grid-row-start: 6;
-  grid-row-end: 8;
-}
+  .d-grid .item1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .d-grid .item2 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row-end: 5;
+  }
+  .d-grid .item3 {
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+  .d-grid .item4 {
+    grid-row-start: 6;
+    grid-row-end: 8;
+  }
 }
 @media screen and (max-width: 500px) {
   .wrapper-header .menu {
@@ -110,5 +110,4 @@
     top: 40%;
     transition: var(--transition);
   }
- 
 }

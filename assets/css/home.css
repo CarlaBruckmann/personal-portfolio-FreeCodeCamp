@@ -12,7 +12,11 @@
     #ebc6ce 71.89%,
     #df96b1 100%
   );
-  --background-project-section: linear-gradient(180deg, #e8b0c1 0%, #c6acc7 100%);
+  --background-project-section: linear-gradient(
+    180deg,
+    #e8b0c1 0%,
+    #c6acc7 100%
+  );
   --white: #ffffff;
   --white-light: rgba(224, 224, 224, 0.24);
   --white-light-font: rgba(255, 255, 255, 0.75);
@@ -42,22 +46,23 @@
   display: flex;
   flex-direction: column;
 }
-h1{
+h1 {
   font-family: var(--font-family-title);
   font-weight: 700;
 }
-h2 , h4{
+h2,
+h4 {
   font-family: var(--font-family-title);
   font-weight: 700;
 }
- h3 {
+h3 {
   font-family: var(--font-family-title);
   font-weight: 400;
- }
+}
 
 p {
-    font-family: var(--font-family-text);
-    font-weight: 200;
+  font-family: var(--font-family-text);
+  font-weight: 200;
 }
 header {
   width: 100%;
@@ -330,8 +335,8 @@ header {
     transform: translate3d(85px, 0, 0);
   }
 }
-.title-section h2{
-  font-size: 48px;;
+.title-section h2 {
+  font-size: 48px;
 }
 #about-section {
   width: 100%;
@@ -370,27 +375,27 @@ header {
 
 #projects {
   width: 100%;
-  height: 1500px;
+  height: auto;
   background: var(--background-project-section);
   color: var(--white);
 }
 
-#projects #title-projects-section{
+#projects #title-projects-section {
   justify-content: center;
   align-items: center;
   padding-top: 25%;
 }
-.d-grid{
+.d-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
   margin: 500px 15px 0 15px;
 }
-.d-grid .item{
+.d-grid .item {
   border: var(--border);
 }
-.d-grid .item1{
+.d-grid .item1 {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
@@ -398,7 +403,7 @@ header {
   width: 100%;
   height: 100%;
 }
-.d-grid .item2{
+.d-grid .item2 {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
@@ -406,7 +411,7 @@ header {
   width: 100%;
   height: 100%;
 }
-.d-grid .item3{
+.d-grid .item3 {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 3;
@@ -415,7 +420,7 @@ header {
   height: 100px;
 }
 
-.d-grid .item4{
+.d-grid .item4 {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 4;
@@ -426,15 +431,15 @@ header {
 #projects .project-title {
   align-items: center;
 }
-#projects .project-title h4{
+#projects .project-title h4 {
   font-size: 48px;
 }
-#projects .project-title p{
+#projects .project-title p {
   margin: 5px 0 0 10px;
   font-size: 30px;
 }
 
- /* #projects:after {
+/* #projects:after {
   background-repeat: no-repeat;
   background-size: cover center;
   content: "";
