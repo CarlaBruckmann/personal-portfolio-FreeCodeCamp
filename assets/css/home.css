@@ -28,6 +28,7 @@
   --transition: 0.4s ease all;
   --font-family-title: "Arima Madurai";
   --font-family-text: "Poppins";
+  --box-shadow: -2px -2px 40px rgba(92, 80, 85, 0.1), 10px 10px 20px rgba(92, 80, 85, 0.5);
 }
 
 * {
@@ -46,15 +47,13 @@
   display: flex;
   flex-direction: column;
 }
-h1 {
+h1, h2,
+h4
+{ 
   font-family: var(--font-family-title);
   font-weight: 700;
 }
-h2,
-h4 {
-  font-family: var(--font-family-title);
-  font-weight: 700;
-}
+
 h3 {
   font-family: var(--font-family-title);
   font-weight: 400;
@@ -390,7 +389,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 20px;
+  grid-gap: 40px;
   margin: 500px 15% 0 15%;
 }
 
@@ -442,17 +441,22 @@ header {
 }
 #projects #cards .wrapper-card {
   width: 100%;
-  height: 800px;
+  height: auto;
   border-radius: 50px;
   background-color: var(--white-light);
   align-items: center;
+  box-shadow: var(--box-shadow);
 }
 #projects #cards .wrapper-card .buttons-card {
   justify-content: space-around;
+  width: 100%;
+  height: auto;
+  
 }
 #projects #cards .wrapper-card .buttons-card .btn {
   width: 250px;
   height: 55px;
+  margin: 30px 0;
   border: var(--border);
   border-radius: 30px;
   background-color: var(--button-color);
@@ -472,12 +476,38 @@ header {
   transition: var(--transition);
 
 }
-#projects #cards .info-card {
+
+#projects #cards .wrapper-card .info-card{
   border: var(--border);
   border-radius: 45px;
   width: 90%;
   height: 80%;
+  margin-bottom: 30px;
   padding: 30px;
+  justify-content: center;
+}
+#projects #cards .wrapper-card .info-card-1 {
+  background-color: var(--white);
+  
+  
+}
+#projects #cards .wrapper-card .info-card .wrapper-text-info-card{
+  align-items: flex-start;
+  margin: 20px;
+  color: var(--grey-medium);
+}
+
+#projects #cards .wrapper-card .info-card .wrapper-text-info-card :first-child{
+  font-family: var(--font-family-title);
+  font-weight: 400;
+  font-size: 30px;
+}
+
+#projects #cards .wrapper-card .info-card .wrapper-text-info-card :last-child{
+  font-family: var(--font-family-text);
+  font-weight: 200;
+  font-size: 25px;
+  padding: 5px 10px;
 }
 /* #projects:after {
   background-repeat: no-repeat;
