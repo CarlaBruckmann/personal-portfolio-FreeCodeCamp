@@ -94,7 +94,7 @@
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .wrapper-header {
     display: flex;
     flex-direction: column;
