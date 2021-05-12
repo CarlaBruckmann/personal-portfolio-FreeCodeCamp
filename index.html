@@ -154,7 +154,9 @@
               <h4>Survey!</h4>
               <p>Form</p>
             </section>
-            <section class="wrapper-card d-flex-column">
+
+            <section class="wrapper-card d-flex-column toggler-change-background-card">
+
               <div class="buttons-card d-flex-row">
                 <button role="button-link" class="btn">
                   <a
@@ -163,6 +165,19 @@
                     >View Live</a
                   >
                 </button>
+
+                <div class="toggler">
+                  <label id="switch" class="switch">
+                    <input
+                      type="checkbox"
+                      onchange="toggleChangeInfoCard()"
+                      id="slider"
+                    />
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+
+
               </div>
               <div class="info-card info-card-1 d-flex-column">
                 <div class="d-flex-row wrapper-text-info-card">

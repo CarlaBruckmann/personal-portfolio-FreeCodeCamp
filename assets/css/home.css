@@ -450,14 +450,14 @@ header {
   box-shadow: var(--box-shadow);
 }
 #projects #cards .wrapper-card .buttons-card {
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
   height: auto;
   
 }
 #projects #cards .wrapper-card .buttons-card .btn {
   height: 50px;
-  margin: 30px 0;
+  margin: 30px 30px;
   border: var(--border);
   border-radius: 30px;
   background-color: var(--button-color);
@@ -478,6 +478,110 @@ header {
 
 }
 
+
+/* toggle css */
+
+.toggler{
+  position:relative;
+  width: 50%;
+  overflow: hidden;
+}
+
+.switch {
+  position: absolute;
+  display: inline-block;
+  width: 100px;
+  height:50px;
+  top:55px;
+  right: -12px;
+  transform:translate(-50%, -50%);
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+ opacity: 0;
+ width: 0;
+ height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--button-color);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 110%;
+  width: 60%;
+  left: 0px;
+  bottom: 4px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  box-shadow: 0 0px 15px #2020203d;
+  background: var(--white);
+}
+
+input:checked + .slider {
+  background-color: var(--white-light-font);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 2px var(--white);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(70%);
+  -ms-transform: translateX(70%);
+  transform: translateX(70%);
+  background: white;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 50px;
+  border: var(--border);
+  
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+.toggler-change-background-card #projects #cards .wrapper-card .info-card .wrapper-text-info-card{
+  opacity: 0;
+}
+
+.toggler-change-background-card #projects #cards .wrapper-card .info-card{
+  background: var(--grey-bold);
+}
+
+.toggler-change-info-card #projects #cards .wrapper-card .info-card .wrapper-text-info-card{
+  opacity: 1;
+}
+
+.toggler-change-info-card #projects #cards .wrapper-card .info-card{
+  background: var(--white);
+}
+
+
+
+
+
+
+
 #projects #cards .wrapper-card .info-card{
   border: var(--border);
   border-radius: 45px;
@@ -486,10 +590,9 @@ header {
   margin-bottom: 30px;
   padding: 10px;
   justify-content: center;
+  cursor: default;
 }
-#projects #cards .wrapper-card .info-card-1 {
-  background-color: var(--white);
-}
+
 
 #projects #cards .wrapper-card .info-card .wrapper-text-info-card{
   align-items: flex-start;
