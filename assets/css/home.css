@@ -400,25 +400,19 @@ header {
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 3;
-  width: 100%;
 }
 .d-grid .item2 {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 4;
-  width: 100%;
-  height: 100%;
-  border: var(--border);
+  margin-top: -350px;
 }
 .d-grid .item3 {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 3;
   grid-row-end: 4;
-  width: 100%;
-  height: 100px;
-  border: var(--border);
 }
 
 .d-grid .item4 {
@@ -426,10 +420,8 @@ header {
   grid-column-end: 3;
   grid-row-start: 4;
   grid-row-end: 6;
-  width: 100%;
-  height: 100%;
-  border: var(--border);
 }
+
 #projects #cards .project-title {
   align-items: center;
 }
@@ -565,16 +557,58 @@ input:checked + .slider:before {
   opacity: 0;
 }
 
-.toggler-change-background-card #projects #cards .wrapper-card .info-card {
+.toggler-change-background-card #projects #cards .wrapper-card .info-card-1 {
   background: url(https://github.com/CarlaBruckmann/survey-form-FreeCodeCamp/blob/master/preview/home.png?raw=true)
     no-repeat;
   background-size: cover;
   background-position: top;
 }
-
-.toggler-change-background-card #projects #cards .wrapper-card .info-card:hover {
+.toggler-change-background-card #projects #cards .wrapper-card .info-card-2 {
+  background: url(https://github.com/CarlaBruckmann/product-landing-page-FreeCodeCamp/blob/master/preview/home.png?raw=true)
+    no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+.toggler-change-background-card #projects #cards .wrapper-card .info-card-3 {
+  background: url(https://github.com/CarlaBruckmann/tribute-page-FreeCodeCamp/blob/master/preview/home.png?raw=true)
+    no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+.toggler-change-background-card #projects #cards .wrapper-card .info-card-4 {
+  background: url(https://github.com/CarlaBruckmann/technical-documentation-page-FreeCodeCamp/blob/master/assets/img/home.png?raw=true)
+    no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+.toggler-change-background-card
+  #projects
+  #cards
+  .wrapper-card
+  .info-card-1:hover {
   animation-name: background-scroll;
   animation-duration: 5s;
+}
+.toggler-change-background-card
+  #projects
+  #cards
+  .wrapper-card
+  .info-card-2:hover,
+.toggler-change-background-card
+  #projects
+  #cards
+  .wrapper-card
+  .info-card-3:hover {
+  animation-name: background-scroll;
+  animation-duration: 20s;
+}
+.toggler-change-background-card
+  #projects
+  #cards
+  .wrapper-card
+  .info-card-4:hover {
+  animation-name: background-scroll;
+  animation-duration: 40s;
 }
 
 @keyframes background-scroll {
@@ -585,7 +619,12 @@ input:checked + .slider:before {
     background-position: center 100%, center 100%, center 100%;
   }
 }
-.toggler-change-info-card #projects #cards .wrapper-card .info-card .wrapper-text-info-card {
+.toggler-change-info-card
+  #projects
+  #cards
+  .wrapper-card
+  .info-card
+  .wrapper-text-info-card {
   opacity: 1;
 }
 
@@ -597,12 +636,25 @@ input:checked + .slider:before {
   border: var(--border);
   border-radius: 45px;
   width: 90%;
-  height: 80%;
   margin-bottom: 30px;
   padding: 10px;
   justify-content: center;
   cursor: default;
 }
+/* #projects #cards .wrapper-card .info-card-1{
+ height: 600px;
+} 
+#projects #cards .wrapper-card .info-card-2{
+ height: 800px;
+} 
+#projects #cards .wrapper-card .info-card-3{
+ height: 600px;
+}
+
+#projects #cards .wrapper-card .info-card-4{
+  height: 700px;
+}  */
+
 
 #projects #cards .wrapper-card .info-card .wrapper-text-info-card {
   align-items: flex-start;
