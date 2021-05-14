@@ -3,6 +3,10 @@
 }
 /* tablet */
 @media screen and (max-width: 1200px){
+  #welcome-section .waves {
+    margin-top: 89vh;
+    transition: var(--transition);
+  }
     .d-grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -55,7 +59,7 @@
   #welcome-section .waves {
     height: 50px;
     min-height: 50px;
-    margin-top: 95vh;
+    margin-top: 96vh;
     transition: var(--transition);
   }
 
@@ -97,6 +101,10 @@
     font-size: 24px;
     text-align: center;
     padding: 0 15px 0 15px;
+    transition: var(--transition);
+  }
+  #welcome-section .waves {
+    margin-top: 95vh;
     transition: var(--transition);
   }
   .wrapper-header .menu a,
@@ -143,7 +151,10 @@
     top: 40%;
     transition: var(--transition);
   }
-
+  #welcome-section .waves {
+    margin-top: 94.5vh;
+    transition: var(--transition);
+  }
   .d-grid {
     margin: 500px 10px 0 10px;
     transition: var(--transition);
