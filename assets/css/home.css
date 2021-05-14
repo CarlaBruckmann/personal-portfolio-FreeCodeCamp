@@ -206,7 +206,7 @@ header {
   color: var(--white);
   font-family: var(--font-family-title);
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 900;
   line-height: 29px;
   padding: 25px;
@@ -433,13 +433,16 @@ header {
 #projects #cards .project-title {
   align-items: center;
 }
+
 #projects #cards .project-title h4 {
   font-size: 48px;
 }
+
 #projects #cards .project-title p {
   margin: 5px 0 0 10px;
   font-size: 30px;
 }
+
 #projects #cards .wrapper-card {
   width: 100%;
   height: auto;

@@ -58,6 +58,7 @@
     margin-top: 95vh;
     transition: var(--transition);
   }
+
   #about-section #text-about-section p,
   #projects #title-projects-section p,
   #projects #cards .project-title p,
@@ -66,6 +67,7 @@
     font-size: 24px;
     transition: var(--transition);
   }  
+  .wrapper-header .menu a,
   #projects #cards .wrapper-card .info-card .wrapper-text-info-card :first-child{
     font-size: 28px;
     transition: var(--transition);
@@ -97,6 +99,7 @@
     padding: 0 15px 0 15px;
     transition: var(--transition);
   }
+  .wrapper-header .menu a,
   #about-section #text-about-section p,
   #projects #title-projects-section p,
   #projects #cards .project-title p,
@@ -105,6 +108,7 @@
     font-size: 20px;
     transition: var(--transition);
   }
+  
   #projects #cards .wrapper-card .info-card .wrapper-text-info-card :first-child{
     font-size: 24px;
     transition: var(--transition);
@@ -128,6 +132,13 @@
     margin: 0 0 15px 15px;
     transition: var(--transition);
   }
+  .wrapper-header .menu li {
+    padding: 10px;
+  }
+  .wrapper-header .menu a{
+    padding: 10px;
+
+  }
   #welcome-section #title-welcome-section {
     top: 40%;
     transition: var(--transition);
@@ -145,10 +156,12 @@
   #projects #cards .wrapper-card .info-card .wrapper-text-info-card {
     margin: 2px 0 0 2px;
   }
+  .wrapper-header .menu a,
   #projects #cards .wrapper-card .info-card .wrapper-text-info-card :last-child  {
     font-size: 18px;
     transition: var(--transition);
   }
+  
   #projects #cards .wrapper-card .info-card .wrapper-text-info-card :first-child{
     font-size: 22px;
     transition: var(--transition);
