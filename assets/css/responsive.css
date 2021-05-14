@@ -1,17 +1,42 @@
 :root {
   --transition: 0.4s ease all;
 }
+@media screen and (max-width: 1400px) {
+  #projects #cards .wrapper-card .info-card .wrapper-text-info-card {
+    margin: 10px;
+  }
+
+  #projects
+    #cards
+    .wrapper-card
+    .info-card
+    .wrapper-text-info-card
+    :last-child {
+    font-size: 24px;
+    transition: var(--transition);
+  }
+
+  #projects
+    #cards
+    .wrapper-card
+    .info-card
+    .wrapper-text-info-card
+    :first-child {
+    font-size: 28px;
+    transition: var(--transition);
+  }
+}
 /* tablet */
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px) {
   #welcome-section .waves {
     margin-top: 89vh;
     transition: var(--transition);
   }
-    .d-grid {
+  .d-grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 20px 0;
-    }
+  }
 
   .d-grid .item1 {
     grid-row-start: 1;
@@ -29,6 +54,28 @@
   .d-grid .item4 {
     grid-row-start: 6;
     grid-row-end: 8;
+  }
+  #projects #cards .wrapper-card .info-card .wrapper-text-info-card {
+    margin: 20px;
+  }
+  #projects
+    #cards
+    .wrapper-card
+    .info-card
+    .wrapper-text-info-card
+    :last-child {
+    font-size: 30px;
+    transition: var(--transition);
+  }
+
+  #projects
+    #cards
+    .wrapper-card
+    .info-card
+    .wrapper-text-info-card
+    :first-child {
+    font-size: 35px;
+    transition: var(--transition);
   }
 }
 /* mobile */
@@ -67,16 +114,25 @@
   #projects #title-projects-section p,
   #projects #cards .project-title p,
   #projects #cards .wrapper-card .buttons-card .btn a,
-  #projects #cards .wrapper-card .info-card .wrapper-text-info-card :last-child {
+  #projects
+    #cards
+    .wrapper-card
+    .info-card
+    .wrapper-text-info-card
+    :last-child {
     font-size: 24px;
     transition: var(--transition);
-  }  
+  }
   .wrapper-header .menu a,
-  #projects #cards .wrapper-card .info-card .wrapper-text-info-card :first-child{
+  #projects
+    #cards
+    .wrapper-card
+    .info-card
+    .wrapper-text-info-card
+    :first-child {
     font-size: 28px;
     transition: var(--transition);
   }
-
 }
 @media screen and (max-width: 540px) {
   .wrapper-header .menu {
@@ -111,13 +167,23 @@
   #about-section #text-about-section p,
   #projects #title-projects-section p,
   #projects #cards .project-title p,
-  #projects #cards .wrapper-card .info-card .wrapper-text-info-card :last-child  {
+  #projects
+    #cards
+    .wrapper-card
+    .info-card
+    .wrapper-text-info-card
+    :last-child {
     line-height: 30px;
     font-size: 20px;
     transition: var(--transition);
   }
-  
-  #projects #cards .wrapper-card .info-card .wrapper-text-info-card :first-child{
+
+  #projects
+    #cards
+    .wrapper-card
+    .info-card
+    .wrapper-text-info-card
+    :first-child {
     font-size: 24px;
     transition: var(--transition);
   }
@@ -143,9 +209,8 @@
   .wrapper-header .menu li {
     padding: 10px;
   }
-  .wrapper-header .menu a{
+  .wrapper-header .menu a {
     padding: 10px;
-
   }
   #welcome-section #title-welcome-section {
     top: 40%;
@@ -160,7 +225,7 @@
     transition: var(--transition);
   }
   .switch {
-    width: 85px; 
+    width: 85px;
     transition: var(--transition);
   }
 
@@ -168,14 +233,23 @@
     margin: 2px 0 0 2px;
   }
   .wrapper-header .menu a,
-  #projects #cards .wrapper-card .info-card .wrapper-text-info-card :last-child  {
+  #projects
+    #cards
+    .wrapper-card
+    .info-card
+    .wrapper-text-info-card
+    :last-child {
     font-size: 18px;
     transition: var(--transition);
   }
-  
-  #projects #cards .wrapper-card .info-card .wrapper-text-info-card :first-child{
+
+  #projects
+    #cards
+    .wrapper-card
+    .info-card
+    .wrapper-text-info-card
+    :first-child {
     font-size: 22px;
     transition: var(--transition);
   }
- 
 }
