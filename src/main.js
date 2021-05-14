@@ -51,12 +51,11 @@ function toggleChangeInfoCard() {
 
 // Immediately invoked function to set the change on initial load//
 (function () {
-  if (localStorage.getItem('change') === 'toggler-change-background-card') {
-      setChangeCard('toggler-change-background-card');
+  if (localStorage.getItem('change') === 'toggler-change-info-card') {
+      setChangeCard('toggler-change-info-card');
       document.getElementById('slider').checked = false;
   } else {
-      setChangeCard('toggler-change-info-card');
+      setChangeCard('toggler-change-background-card');
     document.getElementById('slider').checked = true;
   }
 })();
-

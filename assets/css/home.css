@@ -510,7 +510,7 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--button-color);
+  background-color: var(--white-light-font);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -532,7 +532,7 @@ header {
 }
 
 input:checked + .slider {
-  background-color: var(--white-light-font);
+  background-color: var(--button-color);
 }
 
 input:focus + .slider {
