@@ -462,7 +462,7 @@ header {
   background-color: var(--button-color);
 }
 #projects #cards .wrapper-card .buttons-card .btn a {
-  font-size: 25px;
+  font-size: 30px;
   color: var(--white);
 }
 #projects #cards .wrapper-card .buttons-card .btn:hover {
@@ -610,15 +610,16 @@ input:checked + .slider:before {
 #projects #cards .wrapper-card .info-card .wrapper-text-info-card :first-child {
   font-family: var(--font-family-title);
   font-weight: 400;
-  font-size: 30px;
+  font-size: 35px;
 }
 
 #projects #cards .wrapper-card .info-card .wrapper-text-info-card :last-child {
   font-family: var(--font-family-text);
   font-weight: 200;
-  font-size: 25px;
+  font-size: 30px;
   padding: 5px 10px;
 }
+
 /* #projects:after {
   background-repeat: no-repeat;
   background-size: cover center;

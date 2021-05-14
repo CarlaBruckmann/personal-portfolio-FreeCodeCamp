@@ -1,6 +1,7 @@
 :root {
   --transition: 0.4s ease all;
 }
+/* tablet */
 @media screen and (max-width: 1200px){
     .d-grid {
     grid-template-columns: 1fr;
@@ -26,6 +27,7 @@
     grid-row-end: 8;
   }
 }
+/* mobile */
 @media screen and (max-width: 768px) {
   #welcome-section #title-welcome-section {
     top: 35%;
@@ -57,13 +59,20 @@
     transition: var(--transition);
   }
   #about-section #text-about-section p,
-  #projects #title-projects-section p {
+  #projects #title-projects-section p,
+  #projects #cards .project-title p,
+  #projects #cards .wrapper-card .buttons-card .btn a,
+  #projects #cards .wrapper-card .info-card .wrapper-text-info-card :last-child {
     font-size: 24px;
+    transition: var(--transition);
+  }  
+  #projects #cards .wrapper-card .info-card .wrapper-text-info-card :first-child{
+    font-size: 28px;
     transition: var(--transition);
   }
 
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 540px) {
   .wrapper-header .menu {
     width: 37vh;
     transition: var(--transition);
@@ -89,9 +98,19 @@
     transition: var(--transition);
   }
   #about-section #text-about-section p,
-  #projects #title-projects-section p {
+  #projects #title-projects-section p,
+  #projects #cards .project-title p,
+  #projects #cards .wrapper-card .info-card .wrapper-text-info-card :last-child  {
     line-height: 30px;
     font-size: 20px;
+    transition: var(--transition);
+  }
+  #projects #cards .wrapper-card .info-card .wrapper-text-info-card :first-child{
+    font-size: 24px;
+    transition: var(--transition);
+  }
+  #projects #cards .wrapper-card .info-card .wrapper-text-info-card {
+    margin: 10px;
     transition: var(--transition);
   }
 }
@@ -113,4 +132,25 @@
     top: 40%;
     transition: var(--transition);
   }
+  .d-grid {
+    margin: 500px 10px 0 10px;
+    transition: var(--transition);
+  }
+  .switch {
+    width: 80px; 
+    transition: var(--transition);
+  }
+
+  #projects #cards .wrapper-card .info-card .wrapper-text-info-card {
+    margin: 2px 0 0 2px;
+  }
+  #projects #cards .wrapper-card .info-card .wrapper-text-info-card :last-child  {
+    font-size: 18px;
+    transition: var(--transition);
+  }
+  #projects #cards .wrapper-card .info-card .wrapper-text-info-card :first-child{
+    font-size: 22px;
+    transition: var(--transition);
+  }
+ 
 }
