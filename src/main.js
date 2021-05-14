@@ -42,10 +42,10 @@ function setChangeCard(changeName) {
 
 // function to toggle between background and infos//
 function toggleChangeInfoCard() {
-  if (localStorage.getItem('change') === 'toggler-change-background-card') {
-      setChangeCard('toggler-change-info-card');
-  } else {
+  if (localStorage.getItem('change') === 'toggler-change-info-card') {
       setChangeCard('toggler-change-background-card');
+  } else {
+      setChangeCard('toggler-change-info-card');
   }
 }
 
@@ -59,3 +59,4 @@ function toggleChangeInfoCard() {
     document.getElementById('slider').checked = true;
   }
 })();
+
