@@ -126,7 +126,8 @@
   #projects #cards .wrapper-card .info-card .wrapper-text-info-card :last-child,
   footer .contacts .contact-section form label,
   footer .contacts .contact-section form input,
-  footer .contacts .contact-section form textarea {
+  footer .contacts .contact-section form textarea, 
+  button {
     font-size: 24px;
     transition: var(--transition);
   }
@@ -193,6 +194,7 @@
     :first-child,
   .title-section h3,
   .text-contact-section h3 {
+    line-height: 30px;
     font-size: 24px;
     transition: var(--transition);
   }
