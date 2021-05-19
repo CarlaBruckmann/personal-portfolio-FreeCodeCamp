@@ -5,8 +5,6 @@
   #projects #cards .wrapper-card .info-card .wrapper-text-info-card {
     margin: 10px;
   }
- 
-
   #projects
     #cards
     .wrapper-card
@@ -79,6 +77,16 @@
     transition: var(--transition);
   }
 }
+
+@media screen and (max-width: 1000px) {
+  footer .contacts {
+    flex-direction: column;
+  }
+  footer .contacts .contact-section {
+    width: 100%;
+  }
+}
+
 /* mobile */
 @media screen and (max-width: 768px) {
   #welcome-section #title-welcome-section {
@@ -112,15 +120,13 @@
   }
 
   #about-section #text-about-section p,
-  #projects #title-projects-section p,
+  .title-section p,
   #projects #cards .project-title p,
   #projects #cards .wrapper-card .buttons-card .btn a,
-  #projects
-    #cards
-    .wrapper-card
-    .info-card
-    .wrapper-text-info-card
-    :last-child {
+  #projects #cards .wrapper-card .info-card .wrapper-text-info-card :last-child,
+  footer .contacts .contact-section form label,
+  footer .contacts .contact-section form input,
+  footer .contacts .contact-section form textarea {
     font-size: 24px;
     transition: var(--transition);
   }
@@ -130,7 +136,9 @@
     .wrapper-card
     .info-card
     .wrapper-text-info-card
-    :first-child {
+    :first-child,
+  .title-section h3,
+  .text-contact-section h3 {
     font-size: 28px;
     transition: var(--transition);
   }
@@ -166,14 +174,12 @@
   }
   .wrapper-header .menu a,
   #about-section #text-about-section p,
-  #projects #title-projects-section p,
+  .title-section p,
   #projects #cards .project-title p,
-  #projects
-    #cards
-    .wrapper-card
-    .info-card
-    .wrapper-text-info-card
-    :last-child {
+  #projects #cards .wrapper-card .info-card .wrapper-text-info-card :last-child,
+  footer .contacts .contact-section form label,
+  footer .contacts .contact-section form input,
+  footer .contacts .contact-section form textarea {
     line-height: 30px;
     font-size: 20px;
     transition: var(--transition);
@@ -184,7 +190,9 @@
     .wrapper-card
     .info-card
     .wrapper-text-info-card
-    :first-child {
+    :first-child,
+  .title-section h3,
+  .text-contact-section h3 {
     font-size: 24px;
     transition: var(--transition);
   }
@@ -249,7 +257,9 @@
     .wrapper-card
     .info-card
     .wrapper-text-info-card
-    :first-child {
+    :first-child,
+  .title-section h3,
+  .text-contact-section h3 {
     font-size: 22px;
     transition: var(--transition);
   }
