@@ -470,15 +470,15 @@ header {
   color: var(--white);
 }
 
-#projects #cards .project-title {
+#projects #cards .project-tile {
   align-items: center;
 }
 
-#projects #cards .project-title h4 {
+#projects #cards .project-tile h4 {
   font-size: 48px;
 }
 
-#projects #cards .project-title p {
+#projects #cards .project-tile p {
   margin: 5px 0 0 10px;
   font-size: 30px;
 }
