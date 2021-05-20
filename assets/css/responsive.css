@@ -4,6 +4,7 @@
 @media screen and (max-width: 1400px) {
   #projects #cards .wrapper-card .info-card .wrapper-text-info-card {
     margin: 10px;
+    transition: var(--transition);
   }
   #projects
     #cards
@@ -24,6 +25,10 @@
     font-size: 28px;
     transition: var(--transition);
   }
+  #projects #cards .text-projects-section {
+    margin-right: 15%;
+    transition: var(--transition);
+  }
 }
 /* tablet */
 @media screen and (max-width: 1200px) {
@@ -31,28 +36,52 @@
     margin-top: 89vh;
     transition: var(--transition);
   }
+  #projects #title-projects-section {
+    padding-top: 250px;
+    transition: var(--transition);
+  }
   .d-grid {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 20px 0;
+    grid-template-rows: auto auto auto auto 500px;
+    grid-gap: 40px 0;
   }
 
   .d-grid .item1 {
+    grid-column-start: 1;
     grid-row-start: 1;
-    grid-row-end: 3;
+    grid-row-end: 2;
+    margin-right: 11%;
   }
   .d-grid .item2 {
     grid-column-start: 1;
-    grid-row-start: 3;
-    grid-row-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-right: 11%;
   }
   .d-grid .item3 {
-    grid-row-start: 5;
-    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin-right: 11%;
   }
   .d-grid .item4 {
-    grid-row-start: 6;
-    grid-row-end: 8;
+    grid-column-start: 1;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin-right: 11%;
+  }
+  .d-grid .item5 {
+    grid-column-start: 1;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    height: 500px;
+    background-size: 30%;
+    flex-direction: row;
+    align-items: center;
+  }
+  #projects #cards .text-projects-section {
+    margin-right: 10%;
+    transition: var(--transition);
   }
   #projects #cards .wrapper-card .info-card .wrapper-text-info-card {
     margin: 20px;
@@ -121,15 +150,19 @@
 
   #about-section #text-about-section p,
   .title-section p,
+  .text-projects-section a,
   #projects #cards .project-title p,
   #projects #cards .wrapper-card .buttons-card .btn a,
   #projects #cards .wrapper-card .info-card .wrapper-text-info-card :last-child,
   footer .contacts .contact-section form label,
   footer .contacts .contact-section form input,
-  footer .contacts .contact-section form textarea, 
+  footer .contacts .contact-section form textarea,
   button {
     font-size: 24px;
     transition: var(--transition);
+  }
+  #projects #title-projects-section {
+    padding-top: 200px;
   }
   .wrapper-header .menu a,
   #projects
@@ -139,7 +172,8 @@
     .wrapper-text-info-card
     :first-child,
   .title-section h3,
-  .text-contact-section h3 {
+  .text-contact-section h3,
+  .text-projects-section h3 {
     font-size: 28px;
     transition: var(--transition);
   }
@@ -176,6 +210,8 @@
   .wrapper-header .menu a,
   #about-section #text-about-section p,
   .title-section p,
+  .text-projects-section a,
+  #projects #cards .text-projects-section ul li::before,
   #projects #cards .project-title p,
   #projects #cards .wrapper-card .info-card .wrapper-text-info-card :last-child,
   footer .contacts .contact-section form label,
@@ -185,7 +221,13 @@
     font-size: 20px;
     transition: var(--transition);
   }
-
+  #projects #title-projects-section {
+    padding-top: 150px;
+    transition: var(--transition);
+  }
+  .d-grid .item5 {
+    background-size: 60%;
+  }
   #projects
     #cards
     .wrapper-card
@@ -193,11 +235,16 @@
     .wrapper-text-info-card
     :first-child,
   .title-section h3,
-  .text-contact-section h3 {
-    line-height: 30px;
+  .text-contact-section h3,
+  .text-projects-section h3 {
     font-size: 24px;
     transition: var(--transition);
   }
+  .text-contact-section h3,
+  .text-projects-section h3 {
+    line-height: 30px;
+  }
+
   #projects #cards .wrapper-card .info-card .wrapper-text-info-card {
     margin: 10px;
     transition: var(--transition);
@@ -232,9 +279,20 @@
     transition: var(--transition);
   }
   .d-grid {
-    margin: 500px 10px 0 10px;
+    grid-template-rows: auto auto auto auto 500px;
+    margin-left: 10px;
     transition: var(--transition);
   }
+  .d-grid .item1,
+  .d-grid .item2,
+  .d-grid .item3,
+  .d-grid .item4 {
+    margin-right: 10px;
+  }
+  #projects #cards .text-projects-section {
+    margin-right: 10px;
+  }
+
   .switch {
     width: 85px;
     transition: var(--transition);
@@ -261,7 +319,8 @@
     .wrapper-text-info-card
     :first-child,
   .title-section h3,
-  .text-contact-section h3 {
+  .text-contact-section h3,
+  .text-projects-section h3 {
     font-size: 22px;
     transition: var(--transition);
   }

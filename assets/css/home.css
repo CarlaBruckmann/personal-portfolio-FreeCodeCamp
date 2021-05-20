@@ -397,12 +397,12 @@ header {
 }
 
 #projects #title-projects-section {
-  padding-top: 25%;
+  padding-top: 350px;
 }
 .d-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 0.1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
   grid-gap: 40px 70px;
   margin: 60px 0 0 10%;
   align-items: flex-end;
@@ -417,7 +417,7 @@ header {
 }
 
 .d-grid .item2 {
-   grid-column-start: 1;
+  grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 3;
@@ -433,34 +433,42 @@ header {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 4;
-  grid-row-end: 5;
+  grid-row-end: 6;
   margin-right: 11%;
 }
 
-.d-grid .item5  {
-    grid-column-start: 2;
-   grid-column-end: 3;
-   grid-row-start: 1;
-   grid-row-end: 3;
-   background: url(../img/Vector-projects-section.svg) no-repeat;
-   background-position: right;
-   background-size: 80%;
-   height: 850px;
-   align-items: flex-end;
-   justify-content: center;
+.d-grid .item5 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background: url(../img/Vector-projects-section.svg) no-repeat;
+  background-position: right;
+  background-size: 80%;
+  height: 850px;
+  justify-content: center;
+  align-items: flex-end;
 }
-#projects #cards .text-projects-section{
+#projects #cards .text-projects-section {
   margin-right: 23%;
 }
-
-#projects #cards .text-projects-section ul li{
+#projects #cards .text-projects-section ul {
+  margin-top: 30px;
+}
+#projects #cards .text-projects-section ul li {
   list-style-type: none;
+  margin-top: 10px;
 }
 
-#projects #cards .text-projects-section a{
+#projects #cards .text-projects-section ul li::before {
+  content: "\279A";
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+#projects #cards .text-projects-section a {
   color: var(--white);
 }
-
 
 #projects #cards .project-title {
   align-items: center;
@@ -687,7 +695,7 @@ input:checked + .slider:before {
   border-radius: 45px;
   width: 90%;
   height: auto;
-  min-height: 600px;
+  min-height: 400px;
   margin-bottom: 30px;
   padding: 10px;
   justify-content: center;
@@ -713,8 +721,6 @@ input:checked + .slider:before {
   padding: 5px 10px;
 }
 
-
-
 /* #projects:after {
   background-repeat: no-repeat;
   background-size: cover center;
@@ -734,7 +740,7 @@ footer {
   background: linear-gradient(
       180deg,
       #c7afc95e 0%,
-      #ded2dc56 48.39%,     
+      #ded2dc56 48.39%,
       #ebc6ce59 71.89%,
       #df96b154 100%
     ),
