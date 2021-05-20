@@ -36,14 +36,15 @@
     margin-top: 89vh;
     transition: var(--transition);
   }
-  #projects #title-projects-section {
+  #projects #title-projects-section,
+  footer #title-contacts-section {
     padding-top: 250px;
     transition: var(--transition);
   }
   .d-grid {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto 500px;
-    grid-gap: 40px 0;
+    grid-gap: 100px 0;
   }
 
   .d-grid .item1 {
@@ -68,7 +69,7 @@
     grid-column-start: 1;
     grid-row-start: 4;
     grid-row-end: 5;
-    margin-right: 11%;
+    margin: 0 11% 0 0;
   }
   .d-grid .item5 {
     grid-column-start: 1;
@@ -161,7 +162,8 @@
     font-size: 24px;
     transition: var(--transition);
   }
-  #projects #title-projects-section {
+  #projects #title-projects-section,
+  footer #title-contacts-section {
     padding-top: 200px;
   }
   .wrapper-header .menu a,
@@ -221,7 +223,8 @@
     font-size: 20px;
     transition: var(--transition);
   }
-  #projects #title-projects-section {
+  #projects #title-projects-section,
+  footer #title-contacts-section {
     padding-top: 150px;
     transition: var(--transition);
   }
