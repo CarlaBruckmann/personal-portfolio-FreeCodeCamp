@@ -442,7 +442,7 @@ header {
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 3;
-  background: url(../img/Vector-projects-section.svg) no-repeat;
+  background: url(https://raw.githubusercontent.com/CarlaBruckmann/personal-portfolio-FreeCodeCamp/51d6b957c1db28a3c68d2b6ea874515ff6233b88/assets/img/Vector-projects-section.svg) no-repeat;
   background-position: right;
   background-size: 80%;
   height: 850px;
@@ -744,7 +744,7 @@ footer {
       #ebc6ce59 71.89%,
       #df96b154 100%
     ),
-    url("../img/img-footer.jpg");
+    url("https://github.com/CarlaBruckmann/personal-portfolio-FreeCodeCamp/blob/master/assets/img/img-footer.jpg?raw=true");
   background-size: cover;
   background-position: top;
   color: var(--white);
