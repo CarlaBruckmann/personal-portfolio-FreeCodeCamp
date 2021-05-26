@@ -32,30 +32,3 @@ CSS.paintWorklet.addModule(
 );
 })();
 
-
-// toggle //
-// function to set a given change//
-function setChangeCard(changeName) {
-  localStorage.setItem('change', changeName);
-  document.documentElement.className = changeName;
-}
-
-// function to toggle between background and infos//
-function toggleChangeInfoCard() {
-  if (localStorage.getItem('change') === 'toggler-change-info-card') {
-      setChangeCard('toggler-change-background-card');
-  } else {
-      setChangeCard('toggler-change-info-card');
-  }
-}
-
-// Immediately invoked function to set the change on initial load//
-(function () {
-  if (localStorage.getItem('change') === 'toggler-change-info-card') {
-      setChangeCard('toggler-change-info-card');
-      document.getElementById('slider').checked = false;
-  } else {
-      setChangeCard('toggler-change-background-card');
-    document.getElementById('slider').checked = true;
-  }
-})();
