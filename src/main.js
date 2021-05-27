@@ -1,4 +1,3 @@
-
 // menu //
 function initMenu(){
     let icon = document.querySelector('.icon');

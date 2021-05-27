@@ -20,9 +20,7 @@
   --white: #ffffff;
   --white-light: rgba(224, 224, 224, 0.24);
   --white-light-font: rgba(255, 255, 255, 0.75);
-  --grey-light: #e5e5e5;
   --grey-medium: #767676;
-  --grey-bold: #5e5e5e;
   --button-color: #ebc7cf;
   --border: solid 2px var(--white-light-font);
   --transition: 0.4s ease all;
@@ -38,19 +36,16 @@
   box-sizing: border-box;
   text-decoration: none;
 }
-
 h1,
 h2,
 h4 {
   font-family: var(--font-family-title);
   font-weight: 700;
 }
-
 h3 {
   font-family: var(--font-family-title);
   font-weight: 400;
 }
-
 p,
 a,
 label,
@@ -76,25 +71,21 @@ header {
   z-index: 2;
   background: var(--background-header);
 }
-
 .wrapper-header {
   justify-content: space-between;
   align-items: center;
   margin: 0 10%;
   z-index: 9999;
 }
-
 .logo .wrapper-lines-logo {
   width: 60px;
   height: 30px;
 }
-
- hr {
+hr {
   border: 0;
   background: paint(curved-line);
 }
-/*houdini*/
- .logo .wrapper-lines-logo .custom-line-1 {
+.logo .wrapper-lines-logo .custom-line-1 {
   --curved-lineHeight: 10;
   --curved-lineWidth: 1; /* default: 3 */
   --curved-lineColor: var(--white); /*default: 'black' */
@@ -102,8 +93,7 @@ header {
   width: 30px;
   height: 10px;
 }
-
- .logo .wrapper-lines-logo .custom-line-2 {
+.logo .wrapper-lines-logo .custom-line-2 {
   --curved-lineHeight: 14;
   --curved-lineWidth: 1; /* default: 3 */
   --curved-lineColor: var(--white); /*default: 'black' */
@@ -112,16 +102,6 @@ header {
   height: 15px;
   margin-left: 10px;
 }
-.custom-line-3 {
-  --curved-lineHeight: 20;
-  --curved-lineWidth: 1; /* default: 3 */
-  --curved-lineColor: var(--white-light-font); /*default: 'black' */
-  --curved-lineSpread: 40; /* default: 50 */
-  width: 100%;
-  height: 20px;
-}
-/**/
-
 .wrapper-header .logo {
   z-index: 9999;
   padding-top: 5px;
@@ -129,9 +109,8 @@ header {
   font-weight: 500;
   font-size: 20px;
   color: var(--white);
+  cursor: default;
 }
-
-/*menu*/
 .wrapper-header .icon {
   z-index: 9999;
   cursor: pointer;
@@ -145,7 +124,6 @@ header {
 .wrapper-header .icon .icon-menu {
   padding: 15px 5px 15px 15px;
 }
-
 .wrapper-header .icon .icon-p {
   padding: 22px 0 15px 5px;
 }
@@ -168,7 +146,6 @@ header {
   background-color: var(--white);
   transition: 0.3s;
 }
-/* Icone hamburguer vira X */
 .icon-x .p-1 {
   transform: rotate(45deg) translate(5px, 7px);
 }
@@ -182,17 +159,14 @@ header {
   position: absolute;
   left: -100rem;
   top: 0;
-
   background: url(../img/Vector-menu.svg) no-repeat;
   background-color: var(--background-menu);
   width: 47vh;
   height: 100vh;
-
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-
   transition: var(--transition);
   visibility: hidden;
   opacity: 0;
@@ -221,15 +195,12 @@ header {
   left: 0;
   z-index: 0;
 }
-/**/
-
 #welcome-section {
   z-index: -1;
   width: 100%;
   height: 100vh;
   background: var(--background-home);
 }
-
 #welcome-section #title-welcome-section {
   position: absolute;
   width: 100%;
@@ -237,11 +208,9 @@ header {
   justify-content: center;
   color: var(--white);
 }
-
 #welcome-section #title-welcome-section .wrapper-title-welcome-section {
   align-items: center;
 }
-
 #welcome-section #title-welcome-section .wrapper-title-welcome-section h1 {
   font-size: 72px;
   animation: opacity1 4s;
@@ -263,7 +232,6 @@ header {
   font-size: 48px;
   animation: opacity2 4s;
 }
-
 @keyframes opacity2 {
   0% {
     opacity: 0;
@@ -301,8 +269,6 @@ header {
     opacity: 1;
   }
 }
-
-/*waves*/
 #welcome-section .waves {
   position: relative;
   width: 100%;
@@ -313,7 +279,6 @@ header {
   min-height: 100px;
   max-height: 150px;
 }
-
 .parallax > use {
   animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
 }
@@ -354,7 +319,6 @@ header {
   font-size: 40px;
   line-height: 45px;
 }
-
 #about-section {
   width: 100%;
   height: auto;
@@ -364,18 +328,15 @@ header {
   position: relative;
   z-index: 1;
 }
-
 #about-section #text-about-section {
   margin: 50px 10% 0 10%;
 }
-
 #about-section #text-about-section p,
 .title-section p,
 .text-projects-section a {
   line-height: 45px;
   font-size: 30px;
 }
-
 #about-section:after {
   background-repeat: no-repeat;
   background-size: cover center;
@@ -388,14 +349,12 @@ header {
   height: 312px;
   background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1920 312" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(255, 255, 255, 1)" d="M 0 99 C 454 99 454 249 908 249 L 908 249 L 908 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 907 249 C 1413.5 249 1413.5 99 1920 99 L 1920 99 L 1920 0 L 907 0 Z" stroke-width="0"></path> </svg>');
 }
-
 #projects {
   width: 100%;
   height: auto;
   background: var(--background-project-section);
   color: var(--white);
 }
-
 #projects #title-projects-section {
   padding-top: 350px;
 }
@@ -407,7 +366,6 @@ header {
   margin: 30px 0 0 10%;
   align-items: flex-end;
 }
-
 .d-grid .item1 {
   grid-column-start: 2;
   grid-column-end: 3;
@@ -415,7 +373,6 @@ header {
   grid-row-end: 4;
   margin-right: 23%;
 }
-
 .d-grid .item2 {
   grid-column-start: 1;
   grid-column-end: 2;
@@ -428,7 +385,6 @@ header {
   grid-row-start: 3;
   grid-row-end: 4;
 }
-
 .d-grid .item4 {
   grid-column-start: 1;
   grid-column-end: 3;
@@ -436,13 +392,11 @@ header {
   grid-row-end: 6;
   margin: 0 11% 150px 0;
 }
-
 .d-grid .item5 {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 3;
-  
   background: url("https://raw.githubusercontent.com/CarlaBruckmann/personal-portfolio-FreeCodeCamp/51d6b957c1db28a3c68d2b6ea874515ff6233b88/assets/img/Vector-projects-section.svg")
     no-repeat;
   background-position: right;
@@ -461,30 +415,24 @@ header {
   list-style-type: none;
   margin-top: 10px;
 }
-
 #projects #cards .text-projects-section ul li::before {
   content: "\279A";
   margin-right: 15px;
   font-size: 25px;
 }
-
 #projects #cards .text-projects-section a {
   color: var(--white);
 }
-
 #projects #cards .project-tile {
   align-items: center;
 }
-
 #projects #cards .project-tile h4 {
   font-size: 48px;
 }
-
 #projects #cards .project-tile p {
   margin: 5px 0 0 10px;
   font-size: 30px;
 }
-
 #projects #cards .wrapper-card {
   width: 100%;
   height: auto;
@@ -504,32 +452,28 @@ header {
   border: var(--border);
   border-radius: 30px;
   background-color: var(--button-color);
+  cursor: pointer;
 }
-
 #projects #cards .wrapper-card .buttons-card .btn-2 {
   margin: 30px 30px 30px 20px;
 }
 #projects #cards .wrapper-card .buttons-card .btn-1 {
   margin: 30px 20px 30px 30px;
 }
-
 #projects #cards .wrapper-card .buttons-card .btn a,
 button {
   font-size: 25px;
   color: var(--white);
 }
-
 .btn:hover {
   background-color: var(--white);
   transition: var(--transition);
 }
-
 #projects #cards .wrapper-card .buttons-card .btn:hover a,
 button:hover {
   color: var(--button-color);
   transition: var(--transition);
 }
-
 #projects #cards .wrapper-card .background-card {
   border: var(--border);
   border-radius: 45px;
@@ -538,7 +482,6 @@ button:hover {
   justify-content: center;
   cursor: default;
 }
-
 #projects #cards .wrapper-card .background-card-1 {
   width: 90%;
   height: 500px;
@@ -555,7 +498,6 @@ button:hover {
   background-size: cover;
   background-position: top;
 }
-
 #projects #cards .wrapper-card .background-card-3 {
   width: 90%;
   height: 450px;
@@ -585,7 +527,6 @@ button:hover {
   animation-name: background-scroll;
   animation-duration: 40s;
 }
-
 @keyframes background-scroll {
   0% {
     background-position: center 0%, center 0%, center 0%;
@@ -594,7 +535,6 @@ button:hover {
     background-position: center 100%, center 100%, center 100%;
   }
 }
-
 footer:before {
   background-repeat: no-repeat;
   background-size: cover center;
@@ -603,11 +543,9 @@ footer:before {
   position: absolute;
   width: 100%;
   z-index: 1;
-  /* top: -307em; */
   height: 500px;
   background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1920 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(198, 172, 199, 1)" d="M 0 0 C 382 0 382 204 764 204 L 764 204 L 764 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(198, 172, 199, 1)" d="M 763 204 C 1341.5 204 1341.5 0 1920 0 L 1920 0 L 1920 0 L 763 0 Z" stroke-width="0"></path> </svg>');
 }
-
 footer {
   width: 100%;
   height: auto;
@@ -631,20 +569,16 @@ footer .contacts .contact-section {
   align-items: flex-start;
   width: 50%;
 }
-
 footer .contacts .contact-section-style1 {
   margin-right: 10%;
 }
-
 footer .contacts .contact-section .text-contact-section {
   margin-bottom: 70px;
   text-align: start;
 }
-
 footer .contacts .contact-section form .form-button {
   justify-content: center;
 }
-
 footer .contacts .contact-section .network-icons a {
   font-size: 50px;
   color: var(--white-light-font);
@@ -654,18 +588,15 @@ footer .contacts .contact-section .network-icons a:hover {
   color: var(--white);
   transform: scale(1.05);
 }
-
 footer .contacts .contact-section form,
 footer .contacts .contact-section .network-icons {
   width: 100%;
   height: auto;
   margin: 30px 0 100px 0;
 }
-
 footer .contacts .contact-section form label {
   font-size: 30px;
 }
-
 footer .contacts .contact-section form input,
 footer .contacts .contact-section form textarea {
   width: 100%;
@@ -679,20 +610,19 @@ footer .contacts .contact-section form input::placeholder,
 footer .contacts .contact-section form textarea::placeholder {
   color: var(--white);
 }
-
 footer .contacts .contact-section form input {
   height: 50px;
   padding-left: 15px;
 }
-
 footer .contacts .contact-section form textarea {
   height: 200px;
   padding: 10px 0 0 15px;
 }
-footer .logo{
+footer .logo {
   padding: 80px 20px 30px 20px;
   justify-content: center;
   font-family: var(--font-family-text);
   font-weight: 200;
   font-size: 15px;
+  cursor: default;
 }
