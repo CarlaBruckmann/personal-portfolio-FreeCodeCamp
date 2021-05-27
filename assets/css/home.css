@@ -167,7 +167,7 @@ hr {
   position: absolute;
   left: -100rem;
   top: 0;
-  background: url(../img/Vector-menu.svg) no-repeat;
+  background: url("https://raw.githubusercontent.com/CarlaBruckmann/personal-portfolio-FreeCodeCamp/c3ba926177e511cda197aceb9d2f186d145ebf96/assets/img/Vector-menu.svg") no-repeat;
   background-color: var(--background-menu);
   width: 47vh;
   height: 100vh;
