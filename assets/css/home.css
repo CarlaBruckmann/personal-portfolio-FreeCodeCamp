@@ -442,7 +442,9 @@ header {
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 3;
-  background: url(https://raw.githubusercontent.com/CarlaBruckmann/personal-portfolio-FreeCodeCamp/51d6b957c1db28a3c68d2b6ea874515ff6233b88/assets/img/Vector-projects-section.svg) no-repeat;
+  
+  background: url("https://raw.githubusercontent.com/CarlaBruckmann/personal-portfolio-FreeCodeCamp/51d6b957c1db28a3c68d2b6ea874515ff6233b88/assets/img/Vector-projects-section.svg")
+    no-repeat;
   background-position: right;
   background-size: 80%;
   height: 850px;
@@ -517,11 +519,10 @@ button {
   color: var(--white);
 }
 
-.btn:hover  {
+.btn:hover {
   background-color: var(--white);
   transition: var(--transition);
 }
-
 
 #projects #cards .wrapper-card .buttons-card .btn:hover a,
 button:hover {
@@ -529,8 +530,7 @@ button:hover {
   transition: var(--transition);
 }
 
-
-#projects #cards .wrapper-card .background-card  {
+#projects #cards .wrapper-card .background-card {
   border: var(--border);
   border-radius: 45px;
   margin-bottom: 30px;
@@ -539,61 +539,49 @@ button:hover {
   cursor: default;
 }
 
- #projects #cards .wrapper-card .background-card-1 {
+#projects #cards .wrapper-card .background-card-1 {
   width: 90%;
   height: 500px;
-  background: url(https://github.com/CarlaBruckmann/survey-form-FreeCodeCamp/blob/master/preview/home.png?raw=true)
+  background: url("https://github.com/CarlaBruckmann/survey-form-FreeCodeCamp/blob/master/preview/home.png?raw=true")
     no-repeat;
   background-size: cover;
   background-position: top;
 }
- #projects #cards .wrapper-card .background-card-2 {
+#projects #cards .wrapper-card .background-card-2 {
   width: 90%;
   height: 530px;
-  background: url(https://github.com/CarlaBruckmann/product-landing-page-FreeCodeCamp/blob/master/preview/home.png?raw=true)
+  background: url("https://github.com/CarlaBruckmann/product-landing-page-FreeCodeCamp/blob/master/preview/home.png?raw=true")
     no-repeat;
   background-size: cover;
   background-position: top;
 }
- #projects #cards .wrapper-card .background-card-3 {
+
+#projects #cards .wrapper-card .background-card-3 {
   width: 90%;
-height: 450px;
-  background: url(https://github.com/CarlaBruckmann/tribute-page-FreeCodeCamp/blob/master/preview/home.png?raw=true)
+  height: 450px;
+  background: url("https://github.com/CarlaBruckmann/tribute-page-FreeCodeCamp/blob/master/preview/home.png?raw=true")
     no-repeat;
   background-size: cover;
   background-position: top;
 }
- #projects #cards .wrapper-card .background-card-4 {
-   width: 95%;
-   height: 530px;
-  background: url(https://github.com/CarlaBruckmann/technical-documentation-page-FreeCodeCamp/blob/master/assets/img/home.png?raw=true)
+#projects #cards .wrapper-card .background-card-4 {
+  width: 95%;
+  height: 530px;
+  background: url("https://github.com/CarlaBruckmann/technical-documentation-page-FreeCodeCamp/blob/master/assets/img/home.png?raw=true")
     no-repeat;
   background-size: cover;
   background-position: top;
-  
 }
-  #projects
-  #cards
-  .wrapper-card
-  .background-card-1:hover {
+#projects #cards .wrapper-card .background-card-1:hover {
   animation-name: background-scroll;
   animation-duration: 5s;
 }
-  #projects
-  #cards
-  .wrapper-card
-  .background-card-2:hover,
-  #projects
-  #cards
-  .wrapper-card
-  .background-card-3:hover {
+#projects #cards .wrapper-card .background-card-2:hover,
+#projects #cards .wrapper-card .background-card-3:hover {
   animation-name: background-scroll;
   animation-duration: 20s;
 }
-  #projects
-  #cards
-  .wrapper-card
-  .background-card-4:hover {
+#projects #cards .wrapper-card .background-card-4:hover {
   animation-name: background-scroll;
   animation-duration: 40s;
 }
@@ -617,25 +605,23 @@ footer:before {
   z-index: 1;
   /* top: -307em; */
   height: 500px;
-background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1920 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(198, 172, 199, 1)" d="M 0 0 C 382 0 382 204 764 204 L 764 204 L 764 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(198, 172, 199, 1)" d="M 763 204 C 1341.5 204 1341.5 0 1920 0 L 1920 0 L 1920 0 L 763 0 Z" stroke-width="0"></path> </svg>');
-}  
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1920 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(198, 172, 199, 1)" d="M 0 0 C 382 0 382 204 764 204 L 764 204 L 764 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(198, 172, 199, 1)" d="M 763 204 C 1341.5 204 1341.5 0 1920 0 L 1920 0 L 1920 0 L 763 0 Z" stroke-width="0"></path> </svg>');
+}
 
 footer {
   width: 100%;
   height: auto;
   background: linear-gradient(
-      180deg,
-      #c7afc95e 0%,
-      #ded2dc56 48.39%,
-      #ebc6ce59 71.89%,
-      #df96b154 100%
+      0deg,
+      rgba(10, 10, 10, 0.06),
+      rgba(10, 10, 10, 0.06)
     ),
-    url("https://github.com/CarlaBruckmann/personal-portfolio-FreeCodeCamp/blob/master/assets/img/img-footer.jpg?raw=true");
+    url("https://github.com/CarlaBruckmann/personal-portfolio-FreeCodeCamp/blob/master/assets/img/img-footer.jpg?raw=true;");
   background-size: cover;
   background-position: top;
   color: var(--white);
 }
-footer #title-contacts-section{
+footer #title-contacts-section {
   padding-top: 300px;
 }
 footer .contacts {
