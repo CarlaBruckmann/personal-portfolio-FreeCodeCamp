@@ -84,17 +84,17 @@ header {
   z-index: 9999;
 }
 
-.wrapper-header .logo .wrapper-lines-logo {
+.logo .wrapper-lines-logo {
   width: 60px;
   height: 30px;
 }
 
-.wrapper-header hr {
+ hr {
   border: 0;
   background: paint(curved-line);
 }
 /*houdini*/
-.wrapper-header .logo .wrapper-lines-logo .custom-line-1 {
+ .logo .wrapper-lines-logo .custom-line-1 {
   --curved-lineHeight: 10;
   --curved-lineWidth: 1; /* default: 3 */
   --curved-lineColor: var(--white); /*default: 'black' */
@@ -103,7 +103,7 @@ header {
   height: 10px;
 }
 
-.wrapper-header .logo .wrapper-lines-logo .custom-line-2 {
+ .logo .wrapper-lines-logo .custom-line-2 {
   --curved-lineHeight: 14;
   --curved-lineWidth: 1; /* default: 3 */
   --curved-lineColor: var(--white); /*default: 'black' */
@@ -112,7 +112,7 @@ header {
   height: 15px;
   margin-left: 10px;
 }
-.wrapper-header #navbar .custom-line-3 {
+.custom-line-3 {
   --curved-lineHeight: 20;
   --curved-lineWidth: 1; /* default: 3 */
   --curved-lineColor: var(--white-light-font); /*default: 'black' */
@@ -688,4 +688,11 @@ footer .contacts .contact-section form input {
 footer .contacts .contact-section form textarea {
   height: 200px;
   padding: 10px 0 0 15px;
+}
+footer .logo{
+  padding: 80px 20px 30px 20px;
+  justify-content: center;
+  font-family: var(--font-family-text);
+  font-weight: 200;
+  font-size: 15px;
 }
