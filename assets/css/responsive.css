@@ -64,7 +64,6 @@
   #projects #cards .wrapper-card .background-card-4 {
     width: 90%;
   }
-
 }
 
 @media screen and (max-width: 1000px) {
@@ -130,7 +129,7 @@
     grid-gap: 100px 0;
     margin: 60px 0 0 10%;
   }
-  .d-grid .item5{
+  .d-grid .item5 {
     height: 300px;
     background-size: 25%;
     align-items: flex-start;
@@ -143,7 +142,6 @@
     transition: var(--transition);
   }
 }
-
 
 @media screen and (max-width: 540px) {
   .wrapper-header .menu {
@@ -206,22 +204,28 @@
   .text-projects-section h3 {
     line-height: 30px;
   }
+  .btn {
+    width: 130px;
+  }
 
+  #projects #cards .wrapper-card .buttons-card .btn-2 {
+    margin: 30px 10px 30px 10px;
+  }
+  #projects #cards .wrapper-card .buttons-card .btn-1 {
+    margin: 30px 10px 30px 20px;
+  }
 }
 
 @media screen and (max-width: 450px) {
   .wrapper-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin: 20px 10px 0 20px;
+    margin: 20px 10px 0 10px;
     transition: var(--transition);
   }
-  .wrapper-header .logo {
-    margin: 0 0 15px 15px;
-    transition: var(--transition);
+
+  .wrapper-header .icon-menu {
+    display: none;
   }
+
   .wrapper-header .menu li {
     padding: 10px;
   }
@@ -250,7 +254,6 @@
     margin-right: 10px;
   }
 
-
   .wrapper-header .menu a {
     font-size: 18px;
     transition: var(--transition);
@@ -261,5 +264,20 @@
   .text-projects-section h3 {
     font-size: 22px;
     transition: var(--transition);
+  }
+  #projects #cards .wrapper-card .buttons-card .btn-2 {
+    margin: 30px 5px 30px 10px;
+  }
+  #projects #cards .wrapper-card .buttons-card .btn-1 {
+    margin: 30px 5px 30px 20px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  #projects #cards .wrapper-card .buttons-card .btn-1 {
+    margin: 30px 5px 30px 10px;
+  }
+  #projects #cards .wrapper-card .buttons-card .btn-2 {
+    margin: 30px 5px 30px 5px;
   }
 }
