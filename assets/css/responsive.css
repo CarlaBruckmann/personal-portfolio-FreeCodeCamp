@@ -218,7 +218,7 @@
 
 @media screen and (max-width: 450px) {
   .wrapper-header {
-    margin: 20px 10px 0 10px;
+    margin: 10px 15px;
     transition: var(--transition);
   }
 
