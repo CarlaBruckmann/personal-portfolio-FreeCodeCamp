@@ -225,7 +225,9 @@
   .wrapper-header .icon-menu {
     display: none;
   }
-
+  .wrapper-header .icon .icon-p {
+    padding: 22px 0 20px 5px;
+  }
   .wrapper-header .menu li {
     padding: 10px;
   }
