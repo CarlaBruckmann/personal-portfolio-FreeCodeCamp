@@ -1,6 +1,17 @@
 :root {
   --transition: 0.4s ease all;
 }
+
+@media screen and (min-width: 2000px) {
+  #welcome-section .waves {
+    margin-top: 93vh;
+    transition: var(--transition);
+  }
+  #about-section:after,
+  footer:before {
+    background-repeat: repeat;
+  }
+}
 @media screen and (max-width: 1400px) {
   #projects #cards .text-projects-section {
     margin-right: 15%;
