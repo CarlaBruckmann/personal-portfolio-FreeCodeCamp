@@ -7,7 +7,7 @@
 
 ### :dart: Objetivo: construir uma `Personal Portfolio Webpage`, preenchendo `user stories` aprovados em testes. 
 
-### :white_check_mark: Tecnologias utilizadas: `HTML5`,`CSS3`,`JavaScript`.
+### :white_check_mark: Tecnologias utilizadas: `HTML5`,`CSS3`,`CSS Houdini`,`JavaScript`.
 
 
 #### 🌎 *[Personal Portfolio Webpage](https://carlabruckmann.github.io/personal-portfolio-FreeCodeCamp/)*
